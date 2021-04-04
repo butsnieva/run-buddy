@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --yellow: #fce138;
+    --navy: #024e76;
+    --teal: #39a6b2;
+}
+
 body {
-    color: #39a6b2;
+    color: var(--teal);
     font-family: Arial, Helvetica, sans-serif;
 }
 section {
@@ -16,7 +22,7 @@ section {
 /*   HEADER   */
 header {
     padding: 20px 35px;
-    background-color: #39a6b2;
+    background-color: var(--teal);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -33,12 +39,12 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #fce138;
+    color: var(--yellow);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header a {
-    color: #fce138;
+    color: var(--yellow);
     text-decoration: none;
 }
 header nav {
@@ -58,8 +64,8 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header nav ul li a:hover {
-    background: #fce138;
-    color: #024e76;
+    background: var(--yellow);
+    color: var(--navy);
     border-radius: 15px;
     text-shadow: none;
 }
@@ -88,14 +94,14 @@ header nav ul li a:hover {
 .hero-cta h2 {
     font-style: italic;
     font-size: 55px;
-    color: #fce138;
+    color: var(--yellow);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .hero-form {
-    color: #024e76;
+    color: var(--navy);
     background-color: rgba(252, 225, 56, 0.8);
     padding: 20px;
-    border: solid 3px #024e76;
+    border: solid 3px var(--navy);
     width: 40%;
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -109,11 +115,11 @@ header nav ul li a:hover {
     margin: 5px 0 15px 0;
 }
 .form-input {
-    border: 1px solid #024e76;
+    border: 1px solid var(--navy);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--navy);
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
@@ -128,14 +134,14 @@ header nav ul li a:hover {
 }
 .hero-form button {
     padding: 10px 20px;
-    background-color: #024e76;
-    color: #fce138;
+    background-color: var(--navy);
+    color: var(--yellow);
     font-size: 16px;
     border: none;
     border-radius: 10px;
 }
 .hero-form button:hover {
-    background-color: #39a6b2;
+    background-color: var(--teal);
 }
 .checkbox-wrapper input,
 .radio-wrapper input  {
@@ -162,7 +168,7 @@ header nav ul li a:hover {
     height: 20px;
     width: 20px;
     background: rgba(255, 255, 255, 0.75);
-    border: 1px solid #024e76;
+    border: 1px solid var(--navy);
     position: absolute;
     top: -4px;
     left: -30px;
@@ -175,18 +181,18 @@ content: "";
 width: 20px;
 height: 20px;
 border-radius: 50%;
-background: #024e76;
+background: var(--navy);
 position: absolute;
 left: -29px;
 top: -3px;
-background-image: radial-gradient(circle, #39a6b2, #024e76);
+background-image: radial-gradient(circle, var(--teal), var(--navy));
 }
 .checkbox-wrapper label::after {
     content: "";
     height: 6px;
     width: 14px;
-    border-left: 2px solid #024e76;
-    border-bottom: 2px solid #024e76;
+    border-left: 2px solid var(--navy);
+    border-bottom: 2px solid var(--navy);
     position: absolute;
     left: -26px;
     top: 1px;
@@ -197,7 +203,7 @@ background-image: radial-gradient(circle, #39a6b2, #024e76);
 /*    WHAT WE DO SECTION   */
 .intro p {
     line-height: 1.7;
-    color: #39a6b2;
+    color: var(--teal);
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
@@ -206,7 +212,7 @@ background-image: radial-gradient(circle, #39a6b2, #024e76);
 
 .section-title {
     font-size: 48px;
-    color: #024e76;
+    color: var(--navy);
     border-bottom: 3px solid;
     padding-bottom: 20px;
     text-align: center;
@@ -214,10 +220,10 @@ background-image: radial-gradient(circle, #39a6b2, #024e76);
     width: 50%;
 }
 .primary-border {
-    border-color: #fce138;
+    border-color: var(--yellow);
 }
 .secondary-border {
-    border-color: #39a6b2;
+    border-color: var(--teal);
 }
 
 
@@ -225,7 +231,7 @@ background-image: radial-gradient(circle, #39a6b2, #024e76);
 
 /*    WHAT YOU DO SECTION   */
 .steps {
-    background: #fce138;
+    background: var(--yellow);
 }
 .step {
     margin: 50px auto;
@@ -237,10 +243,10 @@ background-image: radial-gradient(circle, #39a6b2, #024e76);
     justify-content: space-between;
 }
 .step:not(:last-child) {
-    border-bottom: 1px solid #39a6b2;
+    border-bottom: 1px solid var(--teal);
 }
 .step h3 {
-    color: #024e76;
+    color: var(--navy);
     font-size: 46px;
     flex: 1 30%;
 }
@@ -261,13 +267,13 @@ background-image: radial-gradient(circle, #39a6b2, #024e76);
     flex: 12;
 }
 .step-text p {
-    color: #39a6b2;
+    color: var(--teal);
     font-size: 18px;
 }
 .step-text h4 {
     font-size: 26px;
     line-height: 1.5;
-    color: #024e76;
+    color: var(--navy);
 }
 
 
@@ -282,8 +288,8 @@ background-image: radial-gradient(circle, #39a6b2, #024e76);
 }
 .trainer {
     margin: 20px;
-    background: #024e76;
-    color: #fce138;
+    background: var(--navy);
+    color: var(--yellow);
     flex: 1;
 }
 .trainer img {
@@ -310,10 +316,10 @@ background-image: radial-gradient(circle, #39a6b2, #024e76);
 
 /*    REACH OUT SECTION    */
 .contact {
-    background: #024e76;
+    background: var(--navy);
 }
 .contact h2 {
-    color:#fce138
+    color:var(--yellow)
 }
 .contact-info {
     display: flex;
@@ -332,7 +338,7 @@ background-image: radial-gradient(circle, #39a6b2, #024e76);
 }
 .contact-info h3 {
     font-size: 34px;
-    color: #fce138;
+    color: var(--yellow);
 } 
 .contact-info address, 
 .contact-info p {
@@ -342,15 +348,15 @@ background-image: radial-gradient(circle, #39a6b2, #024e76);
     font-size: 16px;
 }
 .contact-info a {
-    color: #fce138;
+    color: var(--yellow);
 } 
 .contact-form input, 
 .contact-form textarea {
-    border: 1px, solid #024e76;
+    border: 1px, solid var(--navy);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--navy);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -366,16 +372,16 @@ background-image: radial-gradient(circle, #39a6b2, #024e76);
 .contact-form button {
     width: 100%;
     border: none;
-    background: #fce138;
-    color: #024e76;
+    background: var(--yellow);
+    color: var(--navy);
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
     border-radius: 10px;
 }
 .contact-form button:hover {
-    color: #fce138;
-    background: #39a6b2;
+    color: var(--yellow);
+    background: var(--teal);
 }
 
 
@@ -383,7 +389,7 @@ background-image: radial-gradient(circle, #39a6b2, #024e76);
 
 /*    FOOTER    */
 footer {
-    background: #fce138;
+    background: var(--yellow);
     width: 100%;
     padding: 40px 35px;
     display: flex;
@@ -391,7 +397,7 @@ footer {
     flex-wrap: wrap;
 }
 footer h2 {
-    color: #024e76;
+    color: var(--navy);
     font-size: 30px;
     margin: 0;
 }
@@ -400,7 +406,7 @@ footer div {
     text-align: right;
 }
 footer a {
-    color: #024e76;
+    color: var(--navy);
 }
 
 .flex-row {
