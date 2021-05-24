@@ -14,6 +14,7 @@
   No installation is required for this application
   ## Usage
   To run this app click on the link of the deployed application below 
+  
   https://butsnieva.github.io/run-buddy
   ## Contributing
   Feel free to contribute
